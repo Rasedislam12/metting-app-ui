@@ -66,6 +66,19 @@ class _joinpageState extends State<joinpage> {
                       borderRadius: BorderRadius.circular(15))),
             ),
           ),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
+            child: ElevatedButton(
+              onPressed: () {
+                Get.to(videocall());
+              },
+              child: Text('Join'),
+              style: ElevatedButton.styleFrom(
+                  fixedSize: Size(MediaQuery.of(context).size.width / 3, 40),
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(15))),
+            ),
+          ),
         ],
       )),
     );
